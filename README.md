@@ -1,6 +1,6 @@
 ![](https://i.imgur.com/xG74tOh.png)
 
-# Back-end | Deploy
+# Back-end | Upload de Arquivos
 
 ## Exercícios de classe 🏫
 
