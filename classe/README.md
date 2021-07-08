@@ -26,6 +26,7 @@ Você deverá refatorar o projeto configurando seu dotenv para receber essas var
 -   Todos os endpoints deverão receber o token do usuario autenticado e validar se o produto em questão pertence a ele.
 
 -   Se você não possuir credenciais do servidor de armazenamento, poderá utilizar as seguintes:
+    - URL: http://sfo3.digitaloceanspaces.com/    
 
 ```
 SPACES_KEY=7QVRC3QQACPAE5TL2TV4
