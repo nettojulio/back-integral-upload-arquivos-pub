@@ -1,8 +1,10 @@
 const express = require('express');
-const usuarios = require('./controladores/usuarios');
-const login = require('./controladores/login');
-const produtos = require('./controladores/produtos');
-const verificaLogin = require('./filtros/verificaLogin');
+const usuarios = require('../controllers/usuarios');
+const login = require('../controllers/login');
+const produtos = require('../controllers/produtos');
+const atualizar = require('../controllers/updateImage');
+const excluir = require('../controllers/deleteImage');
+const verificaLogin = require('../middlewares/verificaLogin');
 
 const rotas = express();
 
@@ -25,5 +27,8 @@ rotas.get('/produtos/:id', produtos.obterProduto);
 rotas.post('/produtos', produtos.cadastrarProduto);
 rotas.put('/produtos/:id', produtos.atualizarProduto);
 rotas.delete('/produtos/:id', produtos.excluirProduto);
+
+rotas.put('/atualizar/produtos/:id', atualizar.atualizarImagem);
+rotas.delete('/atualizar/produtos/:id', excluir.excluirImagem);
 
 module.exports = rotas;
